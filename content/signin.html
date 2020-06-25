@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <title>login</title>
 
     <style>
@@ -52,14 +58,7 @@ img.avatar {
   padding: 16px;
 }
 
-span.psw {color: grey;
-  float: right;
-  padding-top: 16px;
-}
-div.psw {color: grey;
-  float: left;
-  padding-top: 16px;
-} 
+
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
@@ -102,17 +101,23 @@ div.psw {color: grey;
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <button type="submit">Login</button>
+        <a href="./1st.html">
+    <button type="button" class="btn btn-outline-dark">sign in</button>
+  </a>
     <label>
+      
       <input type="checkbox" checked="checked" name="remember"> Remember me
+      <div class="psw">Forgot <a href="#">password?</a></div>
+  <div class="psw"> <a href="./signup.html">signup?</a></div>
     </label>
   </div>
-
+  
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button> 
-    <span class="psw">Forgot <a href="#">password?</a></span>
-    <div class="psw"> <a href="./signup.html">signup?</a></div>
+    <a href="./1st.html">
+    <button  type="button" class="btn btn-outline-dark ">cancel</button>
+  </a>
+    <!-- <button type="button" class="cancelbtn">Cancel</button>  -->
+    
   </div>
 </form> 
 </body>
