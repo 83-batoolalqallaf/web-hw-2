@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- change -->
     <title>action movies</title>
+    <!-- end of chand -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- CSS only -->
+<link rel="stylesheet" href="styles.css">
+
     <style>
-        /* .body{background-image: url(https://images.squarespace-cdn.com/content/v1/5ce454d422009b00018eaba8/1559829761010-JWYMECB0PWG9JOF96OO7/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USOFn4xF8vTWDNAUBm5ducQhX-V3oVjSmr829Rco4W2Uo49ZdOtO_QXox0_W7i2zEA/13885.jpg?format=2500w) ;
-    background-repeat: no-repeat; background-size: cover;} */
-.header {background-color: lightslategray; text-align: center;}
+        
+.header {background-color: silver; text-align: center;border-radius:5px;}
 .movies{text-align: center; background-color: grey}
 .about{background-color: linen;}
-body{color: white;}
+ html,body{color: white;height: 100%;}
 .content{text-align: right;} 
-.images{display: block;padding: auto; margin: auto;}
+.img1{margin-left: 175px; ;}
+.images{display: inline-block;margin: 0px; margin-bottom: 0px;}
+h1
 .element {
   width: 100%;
   height: 100%;
@@ -29,13 +35,47 @@ body{color: white;}
   }
 }
 
+/* sidebar */
+.sidenav {
+  height: 90%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
  /* footer */
- .footer {
+ .footer {border-radius: 5px;
     position:fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    height:auto;
+    height:50px;
     background-color:lightgray;
     color: white;
     text-align: right;
@@ -43,30 +83,32 @@ body{color: white;}
     </style>
 </head>
 <body class="body">
-  <div class="element">
-    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:20%">
-        <a href="./romace.html" class="w3-bar-item w3-button">romance movies</a>
-        <a href="./action.html" class="w3-bar-item w3-button">action movies</a>
-        <a href="./horror.html" class="w3-bar-item w3-button">horror movies</a>
-       
-      </div>
-      
-      <div style="margin-left:25%">
-      
-      
+        <div class="sidenav">
+          <a href="./1st.html">home</a>
+          <a href="./romace.html">romance movies</a>
+          <a href="./horror.html">horror movies</a>
+          <a href="./action.html">action movies</a>
+          <a href="./hiristical.html">historical movies</a>
+        </div>
+<!-- Page content -->
   <!-- Page Content -->
     <div class="header" align="center">
+      <!-- change -->
         <h1 class="hedear">افضل افلام الاكشن</h1>
-      </div class="images">
-      <a href="https://youtu.be/ccwlhyS-nRk">
-        <img src="https://i.pinimg.com/originals/e1/7f/0a/e17f0aa1309d107bf7ec1b04062ddfcf.jpg" width="100%" height="1000"/>
+      </div >
+      <span class="images">
+        <span class="img1">
+      <a href="https://youtu.be/1Q8fG0TtVAY">
+        <img src="https://i.pinimg.com/originals/e1/7f/0a/e17f0aa1309d107bf7ec1b04062ddfcf.jpg" width="400px" height="100%" />
+        </a></span>
+      <a href="https://youtu.be/6ziBFh3V1aM">
+        <img src="https://i.pinimg.com/originals/f7/bc/7b/f7bc7b19e7f8555ba0f36aa3f2bc5dcd.jpg" width="400px" height="100%">
         </a>
-      <a href="https://youtu.be/UY9OBVvGCQQ">
-        <img src="https://i.pinimg.com/originals/f7/bc/7b/f7bc7b19e7f8555ba0f36aa3f2bc5dcd.jpg" width="100%" height="1000">
+        <a href="https://youtu.be/rBxcF-r9Ibs">
+            <img src="https://images.pathe-thuis.nl/22452_378x538.jpg" width="400px" height="100%"/>
         </a>
-        <a href="hhttps://youtu.be/tjknVPNEKzg">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/A1hFzTczzJL._AC_SY679_.jpg" width="100%" height="1000"/>
-            </a>
+          </span>
+          <!-- end of chang -->
             <footer class="footer">
                 <br>
                 <a >
