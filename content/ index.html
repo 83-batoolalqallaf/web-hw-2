@@ -1,12 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>urmovies</title>
+  
 <link rel="stylesheet" href="./styles.css">
 <style>
+
  body {
   margin: 0;
   font-size: 28px;
@@ -18,37 +19,48 @@
 
 <div class="header">
   <h2>افلامك المفضله</h2>
-  <h4>هنا تجد جميع ما يتعلق بالافلام </h4>
+  <h4>هنا تجد جميع  افلامك المفضله</h4>
 </div>
-<!-- navbar -->
-<div class="navbar" >
-  <img align="left" src="https://pmcvariety.files.wordpress.com/2017/02/imdb1.png" 
-  height="50" width="70">
+<div class="topnav" id="myTopnav">
+  <a href="">
+    <img src="./Screen Shot 2020-07-08 at 2.37.53 PM.png" 
+    width="60px">
+    </a>
+  <a href="./ index.html" class="active">Home</a>
+  <a href="./signin.html">signin</a>
   <div class="dropdown">
     <button class="dropbtn">more
-       <i class="fa fa-caret-down1"></i>
-     </button>
-     <div class="dropdown-content">
-       <a href="./romace.html">romance movies</a>  
-       <a href="./action.html">action movies</a>
-       <a href="./horror.html">horror movies</a>
-       <a href="./hiristical.html">historical movies</a>
-     </div>
- </div>
-  <a align="right"   href="./signin.html">login </a>
-  </div>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="./action.html">action movies</a>
+      <a href="./romace.html">romance movies</a>
+      <a href="./hiristical.html">hiristical movies</a>
+      <a href="./horror.html">horror movies</a>
+      <a href="./cartoons.html">cartoon movies</a>
+    </div>
+  </div> 
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button   type="submit">Submit</button>
+    </form>
+  </div>  
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
+
+
 <!-- page content -->
  <h1 class="movies" >الاعلى مشاهده 2019  </h1>
  <a href="./6underground.html">
- <img src="https://cdn.traileraddict.com/content/netflix/6-underground-poster.jpg" width="460" height="700"/>
+ <img src="https://cdn.traileraddict.com/content/netflix/6-underground-poster.jpg" width="460px" height="700px"/>
  </a>
  <a href="./murder.html">
    <img src="https://m.media-amazon.com/images/M/MV5BNTA2YTI5YjUtZWI4Zi00NWQ5LWFiYmEtOTBmNTUyNDAwNjllXkEyXkFqcGdeQXVyNjIzNzM4NzA@._V1_.jpg" 
-    width="460" height="700"/>
+    width="460px" height="700"/>
    </a>
    <a href="./irishman.html">
-     <img src="https://images-na.ssl-images-amazon.com/images/I/71Y5pMAw8rL._AC_SL1200_.jpg" width="460" height="700"/>
+     <img src="https://images-na.ssl-images-amazon.com/images/I/71Y5pMAw8rL._AC_SL1200_.jpg" width="460px" height="700px"/>
      </a>
 </p>
 <br>
@@ -56,7 +68,7 @@
 <p>
   <h1 class="movies" >الشائع الان  </h1>
   <a href="./5feet.html">
-  <img src="https://i.pinimg.com/originals/b6/8d/0a/b68d0a8eada1409f894600897aca9d4d.jpg" width="460" height="700"/>
+  <img src="https://i.pinimg.com/originals/b6/8d/0a/b68d0a8eada1409f894600897aca9d4d.jpg" width="460hv" height="700"/>
   </a>
   <a href="./joker.html">
     <img src="https://i.pinimg.com/originals/dd/58/62/dd586203382ee10102c591bff2a551b8.jpg" width="460" height="700"/>
@@ -81,7 +93,6 @@ function myFunction() {
 }
 </script>
 
+          
 </body>
 </html>
-
-
